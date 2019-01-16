@@ -157,10 +157,10 @@ public class PermissionUtil {
     }
 
     /**
-     * 请求获取摄像头和麦克风
+     * 请求获取拍照录视频权限
      */
-    public static void readMicroPhone(RequestPermission requestPermission, RxPermissions rxPermissions, RxErrorHandler errorHandler) {
-        requestPermission(requestPermission, rxPermissions, errorHandler, Manifest.permission.CAMERA,Manifest.permission.RECORD_AUDIO);
+    public static void recordVideo(RequestPermission requestPermission, RxPermissions rxPermissions, RxErrorHandler errorHandler) {
+        requestPermission(requestPermission, rxPermissions, errorHandler, Manifest.permission.CAMERA,Manifest.permission.RECORD_AUDIO,Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
 }
