@@ -15,7 +15,6 @@
  */
 package com.jess.arms.di.component;
 
-import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
@@ -26,7 +25,6 @@ import com.jess.arms.di.module.ClientModule;
 import com.jess.arms.di.module.GlobalConfigModule;
 import com.jess.arms.http.imageloader.BaseImageLoaderStrategy;
 import com.jess.arms.http.imageloader.ImageLoader;
-import com.jess.arms.integration.AppManager;
 import com.jess.arms.integration.ConfigModule;
 import com.jess.arms.integration.IRepositoryManager;
 import com.jess.arms.integration.cache.Cache;
@@ -55,6 +53,7 @@ import okhttp3.OkHttpClient;
 @Singleton
 @Component(modules = {AppModule.class, ClientModule.class, GlobalConfigModule.class})
 public interface AppComponent {
+
     Application application();
 
     /**
